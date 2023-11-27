@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 
@@ -17,6 +18,7 @@ public class BrowserTest {
 	@Test
 	public void getData() throws InterruptedException
 	{
+		//System.setProperty("webdriver.edge.driver","/Automation2/msedgedriver.exe");
 		WebDriver driver= new FirefoxDriver();
 		// TODO Auto-generated method stub
 		driver.get("https://dotnetwebapp2.azurewebsites.net/");
